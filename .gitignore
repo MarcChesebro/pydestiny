@@ -1,0 +1,4 @@
+/target
+pydestiny.pyd
+**/*.rs.bk
+Cargo.lock
