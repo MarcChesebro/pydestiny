@@ -1,16 +1,15 @@
+//! This is a wrapper for the destiny crate.
+//! 
+//! Destiny is a crate for dice rolling utilities
+
 use pyo3::prelude::*;
 use destiny;
 
-/// wrapper
+/// wrapper for the destiny rust crate
 #[pymodule]
-fn pydestiny(py: Python, m: &PyModule) -> PyResult<()> {
+fn pydestiny(_py: Python, m: &PyModule) -> PyResult<()> {
 
-    #[pyfn(m, "hello_world")]
-    fn hello_world(_py: Python) -> PyResult<String> {
-        let out = "Hello_world";
-        Ok(out.to_string())
-    }
-
+    /// wrapper for destiny::parse_dice_string
     #[pyfn(m, "parse_dice_string")]
     fn parse_dice_string(_py: Python, string: &str) -> PyResult<i64> {
         Ok(destiny::parse_dice_string(string))
