@@ -3,7 +3,11 @@ name = "pydestiny"
 version = "0.1.0"
 authors = ["Marc Chesebro <marc.chesebro@gmail.com>"]
 edition = "2018"
+description = "A python wrapper for the rust crate destiny. A library for rolling dice and calculating dice distributions."
 license = "MIT"
+
+repository = "https://github.com/MarcChesebro/pydestiny"
+readme = "./README.md"
 
 [lib]
 name = "pydestiny"
