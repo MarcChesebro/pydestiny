@@ -1,6 +1,7 @@
 //! This is a wrapper for the destiny crate.
 //! 
-//! Destiny is a crate for dice rolling utilities
+//! Destiny is a crate for dice rolling utilities.
+//! Currently pydestiny only supports parse_dice_string.
 
 use pyo3::prelude::*;
 use destiny;
